@@ -5,7 +5,7 @@ n=100;
 true_ind=[2 3 4 5 6];
 beta=[0 1 1/2 1/3 1/4 1/5  zeros(1,p-6)]';
 gama=1;
-M=50;
+M=100;
 c=1.1;
 alpha=0.05;
 lambda_n = 0.4*c*sqrt((log(2*p/alpha))/(n-1));
@@ -64,7 +64,7 @@ end
 
 %%
 % performance results
-for m=1:43
+for m=1:100
     %%
     %for mean L0
     beta1_L0(m)=sum(size(find(abs(beta1{1,m})>0.00001),1));
